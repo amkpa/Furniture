@@ -1,0 +1,191 @@
+www.xyz.com
+------------
+1.product page --> display
+can use all functionality but cann't add
+to cart and cann't see oder or place oder
+
+2.When user add the items to cart (Not login ) 
+then the page redirect to login page
+
+
+
+
+
+
+
+
+Admin Module
+------------
+login
+add to product
+update product
+remove product
+shipped product
+delivery status
+delivery product
+View oders
+view Product list(Stock)
+view user List
+user account(Active✅/ Inactive❌)
+search operation
+
+
+Customer Module
+---------------
+User-login
+User-register
+add to cart
+remove the product from cart
+add to wishlist
+profile--->Add address, edit profile, view oders, logout
+view products 
+oder item
+review products(ratings)
+payment gateway
+search operation
+
+
+Entity
+------------
+User-Entity
+----------------
+User-Id
+User-name(username)
+User-email
+User-phone no
+User-DOB
+User-gender
+User-password
+User-confirm password
+User-Otp(email And sms)--> New page for otp 
+User-Account Status(Active✅/ Inactive❌)
+
+
+Product-Entity
+--------------
+Product-ID
+Product-Name
+Product-Description
+Product-Images
+Product-Ratings
+Product-Price
+Product-Type
+Product-Quantity
+
+Address-Entity
+--------------
+User-Id
+User-fullname*
+User-PhoneNumber*
+User-Alternate Phn Number
+User-pincode*
+User-state*
+User-City*
+User-Area*
+User-Houseno,BuildingName
+User-Landmark
+User-AddressType(Work,Home,Others)
+User-CurrentLocation
+
+Transcation-Entity
+------------------
+Transcation-Id
+Card-Username
+Transcation-Time
+Transcation-ammount
+
+Binding
+---------
+OderDetails-Binding
+-------------------
+Oder-Id
+Product-Id
+Product-Name
+Product-Price
+Product-Quantity
+Product-shipped
+Product-Time
+Product-Images
+
+
+Cart-Binding
+-----------
+User-ID
+Product-ID
+Product-Quantity
+
+Oder-Binding
+-----------
+Transcation-ID
+Product-Id
+Product-Quantity
+Product-Price
+Product-Shipped
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Forgot Password/email
+---------------------
+email
+sms--> Enhancement
+
+
+
