@@ -23,20 +23,19 @@ import lombok.Setter;
 @Getter
 @Table(name = "CART")
 public class CartEntity {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "cart_id")
 	private Long cartId;
 	private Integer quantity;
-	
-	
+
 	@OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="user_id")
-    private UserEntity user;
-	
+	@JoinColumn(name = "user_id")
+	private UserEntity user;
+
 	@OneToMany(mappedBy = "cart", cascade = CascadeType.ALL)
-	//@JoinColumn(name = "prod_id")
+	// @JoinColumn(name = "prod_id")
 	@JsonIgnore
 	private List<ProductEntity> product;
 
